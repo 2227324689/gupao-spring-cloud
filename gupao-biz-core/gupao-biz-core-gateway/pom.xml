@@ -3,23 +3,29 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>gupao-spring-cloud</artifactId>
+        <artifactId>gupao-biz-core</artifactId>
         <groupId>com.edu.gupao</groupId>
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>gupao-biz-service-api</artifactId>
+    <artifactId>gupao-biz-core-gateway</artifactId>
+    <description>网关配置</description>
 
-    <name>gupao-biz-service-api</name>
+    <name>gupao-biz-core-gateway</name>
     <url>https://ke.gupaoedu.cn</url>
-    <description>系统应用服务-公共api模块</description>
-    <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.edu.gupao</groupId>
+            <artifactId>gupao-biz-core-tool</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
